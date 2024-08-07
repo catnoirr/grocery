@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <h1><i class='bx bxs-shopping-bags'></i> Grocery List</h1>
+    <div class="manage">
+        <input type="text" id="item" placeholder="Item Name">
+        <input type="text" id="quantity" placeholder="Quantity (eg: g, kg, l)">
+        <button id="add-item"><i class='bx bxl-shopify'></i> Add Item</button>
+    </div>
+    <p >Item List <i class='bx bx-list-ul'></i></p>
+
+    <div id="grocery-list">
+        <!-- Items will be added here dynamically -->
+    </div>
+    <button id="generate-pdf"><i class='bx bxs-file-pdf' ></i> Generate PDF</button>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
